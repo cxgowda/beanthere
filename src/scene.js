@@ -1,6 +1,6 @@
 import { useFrame, useThree } from "@react-three/fiber";
-import { useScroll, useGLTF, useAnimations, Text, Html } from "@react-three/drei";
-import { useRef, useEffect } from "react";
+import { useScroll, Html } from "@react-three/drei";
+import { useRef } from "react";
 import Logo from "./logo";
 
 export default function Scene() {
