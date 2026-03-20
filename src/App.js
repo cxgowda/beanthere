@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-route
 import { Canvas } from "@react-three/fiber";
 import { ScrollControls } from "@react-three/drei";
 import Scene from "./scene";
-import Logo from "./logo";
 import Loader from "./loader";
 import Cephi from "./Cephi";
 import { Suspense, useEffect, useState } from "react";
@@ -25,9 +24,7 @@ function MainPage() {
 
   return (
     <>
-      <div className="hero-text">
-        <Logo />
-      </div>
+      {/* Logo is now rendered inside Canvas via Scene — no hero-text div needed */}
 
       <div className={`scroll-arrow ${!showArrow ? "hide" : ""}`}>
         <div className="chevron"><span></span><span></span></div>
@@ -41,24 +38,20 @@ function MainPage() {
             <Scene />
           </ScrollControls>
         </Suspense>
-      </Canvas> 
-
-      {/* Fixed Cephi SVG Button with sparks */}
-      
-  
+      </Canvas>
 
       <style>
         {`
           @keyframes glow {
-            from { box-shadow: 0 0 5px #82B0B3, 0 0 10px #82B0B3; }
-            to { box-shadow: 0 0 15px #82B0B3, 0 0 30px #82B0B3; }
+            from { box-shadow: 0 0 5px #C09020, 0 0 10px #C09020; }
+            to   { box-shadow: 0 0 15px #C09020, 0 0 30px #C09020; }
           }
           @keyframes spark {
-            0% { transform: translate(0,0) scale(0.5); opacity: 1; }
+            0%   { transform: translate(0,0) scale(0.5); opacity: 1; }
             100% { transform: translate(calc(-20px + 40px * var(--randX)), calc(-20px + 40px * var(--randY))) scale(0); opacity: 0; }
           }
         `}
-      </style> 
+      </style>
     </>
   );
 }
