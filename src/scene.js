@@ -1,8 +1,6 @@
 import { useFrame, useThree } from "@react-three/fiber";
 import { useScroll, useGLTF, useAnimations, Text, Html } from "@react-three/drei";
 import { useRef, useEffect } from "react";
-import InfoBox from "./InfoBox";
-import CephiLoader from "./CephiLoader.js";
 import Logo from "./logo";
 
 export default function Scene() {

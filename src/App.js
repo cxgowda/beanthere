@@ -44,7 +44,7 @@ function MainPage() {
         {`
           @keyframes glow {
             from { box-shadow: 0 0 5px #C09020, 0 0 10px #C09020; }
-            to   { box-shadow: 0 0 15px #C09020, 0 0 30px #C09020; }
+            to   { box-shadow: 0 0 15px #C09020, 0 0 30px #82B0B3; }
           }
           @keyframes spark {
             0%   { transform: translate(0,0) scale(0.5); opacity: 1; }
