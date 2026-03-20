@@ -13,9 +13,9 @@ body {
   background: linear-gradient(
     180deg,
     #e8d3b9 00%,   /* start at top */
-    #beb09f 40%,  /* keep dark color till 40% height */
-    #beb09f 40%,  /* start white at 40% */
-    #746351 100%  /* all the way to bottom */
+    #bdb5ad  40%,  /* keep dark color till 40% height */
+    #bdb5ad 40%,  /* start white at 40% */
+    #bbad9e 100%  /* all the way to bottom */
   );
     font-family: "Inter", sans-serif;
 }

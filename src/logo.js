@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const Logo = () => {
   useEffect(() => {
     const link = document.createElement("link");
-    link.href = "https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap";
+    link.href = "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Solitreo&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap";
     link.rel = "stylesheet";
     document.head.appendChild(link);
     return () => document.head.removeChild(link);
@@ -42,7 +42,7 @@ const Logo = () => {
           useThree viewport.width so it stays proportional on all screens.
         */
         .beanthere-text {
-          font-family: 'Great Vibes', cursive;
+          font-family: 'Lato', sans-serif;
           font-size: 52px;
           line-height: 1;
           white-space: nowrap;
@@ -79,7 +79,7 @@ const Logo = () => {
         }
 
         .beanthere-tagline {
-          font-family: 'Great Vibes', cursive;
+          font-family: 'Lato', sans-serif;
           font-size: 14px;
           color: #311f0c;
           letter-spacing: 2px;
@@ -101,7 +101,7 @@ const Logo = () => {
         padding: "16px 20px 14px",
         background: "transparent",
         borderRadius: "18px",
-        width: "360px",       /* fixed width — Scene scales the group */
+        width: "360px",
         boxSizing: "border-box",
       }}>
 
